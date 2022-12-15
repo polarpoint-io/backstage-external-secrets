@@ -1,0 +1,13 @@
+{{- range .Values.backstage.extraAppConfig }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .configMapRef }}
+  namespace: {{ $.Release.Namespace | quote }}
+  labels: {{- include "common.labels.standard" $ | nindent 4 }}
+    app.kubernetes.io/component: backstage
+data:
+  {{ .filename }}: |
+    {{- .data | nindent 4 }}
+{{- end }}
