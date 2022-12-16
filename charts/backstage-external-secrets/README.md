@@ -27,6 +27,7 @@ The following command can be used to add the chart repository:
 
 ```console
 helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add external-secrets https://charts.external-secrets.io
 helm repo add backstage https://backstage.github.io/charts
 ```
 
