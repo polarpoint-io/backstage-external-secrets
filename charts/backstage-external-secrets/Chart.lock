@@ -1,6 +1,0 @@
-dependencies:
-- name: external-secrets
-  repository: https://charts.external-secrets.io
-  version: 0.7.0
-digest: sha256:d06fb336a3b37dca05ed2978dc738797fd24486be186b3449fc28c5948c1c31f
-generated: "2022-12-15T19:26:40.513023Z"
