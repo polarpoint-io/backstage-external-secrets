@@ -4,11 +4,6 @@
 
 Creation of Kubernetes secrets from Secrets backends for Backstage
 
-To regenerate this document, from the root of this chart directory run:
-```shell
-docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest
-```
-
 ## Prerequisites
 
 - Helm v3.10.2+
@@ -39,7 +34,7 @@ helm upgrade -i <release_name> backstage/backstage-external-secrets
 
 ### Installing from an OCI Registry
 
-Charts are also available in OCI format. The list of available charts can be found [here](https://github.com/orgs/backstage/packages?repo_name=charts).
+Charts are also available in OCI format. The list of available charts can be found [here](https://github.com/orgs/polarpoint-io/packages?repo_name=charts).
 
 Install one of the available charts:
 
