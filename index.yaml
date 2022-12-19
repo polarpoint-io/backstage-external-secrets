@@ -1,0 +1,45 @@
+apiVersion: v1
+entries:
+  backstage:
+  - apiVersion: v2
+    created: "2022-12-19T17:18:37.665739837Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Helm chart for deploying a Backstage application
+    digest: 1ced79aebc50621ea517fa484e8113df0f97e904004d1499328e9689efadce35
+    name: backstage
+    type: application
+    urls:
+    - https://github.com/polarpoint-io/charts/releases/download/backstage-0.11.2/backstage-0.11.2.tgz
+    version: 0.11.2
+  backstage-external-secrets:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2022-12-19T17:18:37.804158273Z"
+    dependencies:
+    - name: external-secrets
+      repository: https://charts.external-secrets.io
+      tags:
+      - external-secrets-operator
+      - secrets
+      - eso
+      version: 0.7.0
+    description: Creation of Kubernetes secrets from Secrets backends for Backstage
+    digest: 3b60e29b3f5e07fb276861d255c4b139abdc2b2b5cc6f19a061ebccc7e8d2db9
+    maintainers:
+    - email: surj@polarpoint.io
+      name: bainss
+    name: backstage-external-secrets
+    type: application
+    urls:
+    - https://github.com/polarpoint-io/charts/releases/download/backstage-external-secrets-1.0.1/backstage-external-secrets-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-12-19T17:18:37.804175473Z"
